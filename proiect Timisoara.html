@@ -8,6 +8,7 @@
       body {
         font-family: Arial, sans-serif;
         margin: 20px;
+        background: #d1e8e2;
       }
 
       .container {
@@ -17,10 +18,11 @@
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding-bottom: 0;
       }
 
       .title {
-        background-color: #45a049;
+        background-color: #116466;
         display: inline-block;
         padding: 10px;
         border-radius: 8px;
@@ -40,7 +42,7 @@
       }
 
       .butonn {
-        background-color: #45a049;
+        background-color: #116466;
         color: #fff;
         padding: 10px 20px;
         border: none;
@@ -50,7 +52,7 @@
       }
 
       .butonn:hover {
-        background-color: #0a5c16;
+        background-color: #278b8d;
       }
 
       .butonn:active {
@@ -61,6 +63,7 @@
         margin-top: 20px;
         font-weight: bold;
       }
+
       .buton {
         background-color: rgb(209, 42, 0);
         color: #fff;
@@ -78,6 +81,7 @@
       .buton:active {
         opacity: 0.7;
       }
+
       .button-container {
         display: flex;
         justify-content: space-around;
@@ -94,7 +98,7 @@
         <a href="wordle.html"
           ><img
             class="image"
-            src="/images/WhatsApp_Image_2023-11-18_at_14.51.51_e547de02-removebg-preview.png"
+            src="/proiectUNIHACK/WhatsApp_Image_2023-11-18_at_14.51.51_e547de02-removebg-preview.png"
             alt=""
         /></a>
       </div>
@@ -122,6 +126,10 @@
         <strong>Search</strong>
       </button>
       <div id="result"></div>
+      <div class="button-container">
+        <button class="clear">Clear</button>
+        <button class="next">Next</button>
+      </div>
     </div>
 
     <script>
@@ -190,7 +198,6 @@
         cow: "A fully grown female animal of a domesticated breed of ox, kept to produce milk or beef.",
         sheep:
           "A domesticated ruminant mammal with a thick woolly coat and typically curly horns.",
-        pig: "A domesticated hoofed mammal with sparse bristly hair and a flat snout for rooting in the soil, kept for its meat.",
         chicken:
           "A domestic fowl kept for its eggs or meat, especially a young one.",
         duck: "A waterbird with a broad flat bill, webbed feet, and a squat body.",
@@ -232,7 +239,7 @@
           "A young human being below the age of puberty or below the legal age of majority.",
         ],
         eye: [
-          "each of a pair of globular organs of sight in the head of humans and vertebrate animals.",
+          "Each of a pair of globular organs of sight in the head of humans and vertebrate animals.",
         ],
         woman: ["An adult female human being."],
         place: ["A particular position, point, or area in space; a location."],
@@ -381,7 +388,7 @@
           "An electronic device for storing and processing data, typically in binary form, according to instructions given to it in a variable program",
         ],
         internet: [
-          "A global computer network providing a variety of information and communication facilities, consisting of interconnected networks using standardized communication protocols",
+          "A global computer network providing a variety of information and communication facilities, consisting of interconnected networks using standardized communication protocols",
         ],
         friendship: [
           "The emotions or conduct of friends; the state of being friends",
@@ -438,6 +445,503 @@
         ant: [
           "A small insect typically having a sting and living in a complex social colony with one or more breeding queens.",
         ],
+        mud: [
+          "A slimy sticky mixture of solid material with a liquid and especially water.",
+        ],
+        earth: ["The planet on which we live"],
+        hair: [
+          "Any of the fine threadlike strands growing from the skin of humans, mammals, and some other animals.",
+        ],
+        pet: ["A domestic or tamed animal kept for companionship or pleasure."],
+        pig: [
+          "An omnivorous domesticated hoofed mammal with sparse bristly hair and a flat snout for rooting in the soil.",
+        ],
+        bird: [
+          "A warm-blooded egg-laying vertebrate animal distinguished by the possession of feathers, wings, a beak, and typically by being able to fly.",
+        ],
+        barn: [
+          "A large farm building used for storing grain, hay, or straw or for housing livestock.",
+        ],
+        moon: [
+          "The natural satellite of the earth, visible (chiefly at night) by reflected light from the sun.",
+        ],
+        snap: [
+          "Break suddenly and completely, typically with a sharp cracking sound.",
+        ],
+        heat: ["The quality of being hot, high temperature."],
+        hit: [
+          "To bring your hand, or an object you are holding, against somebody/something quickly and with force.",
+        ],
+        ice: ["Frozen water, a brittle transparent crystalline solid."],
+        pirate: ["A person who attacks and robs ships at sea."],
+        cave: ["A natural underground chamber in a hillside or cliff."],
+        pact: ["A formal agreement between individuals or parties."],
+        rice: [
+          "A swamp grass which is widely cultivated as a source of food, especially in Asia.",
+        ],
+        rate: ["A fixed price paid or charged for something."],
+        vice: ["Immoral or wicked behaviour."],
+        carpet: ["A floor covering made from thick woven fabric."],
+        chart: [
+          "A sheet of information in the form of a table, graph, or diagram.",
+        ],
+        peach: [
+          "A round stone fruit with juicy yellow flesh and downy pinkish-yellow skin.",
+        ],
+        teach: [
+          "Impart knowledge to or instruct (someone) as to how to do something.",
+        ],
+        braid: [
+          "A length of hair made up of three or more interlaced strands.",
+        ],
+        brain: [
+          "An organ of soft nervous tissue contained in the skull of vertebrates, functioning as the coordinating centre of sensation and intellectual and nervous activity.",
+        ],
+        bind: ["Tie or fasten (something) tightly together."],
+        bride: [
+          "A woman on her wedding day or just before and after the event.",
+        ],
+        drape: ["Long curtains"],
+        drain: [
+          "Cause the water or other liquid in (something) to run out, leaving it empty or dry.",
+        ],
+        diner: [
+          "A person who is eating, typically a customer in a restaurant.",
+        ],
+        dine: ["Eat dinner."],
+        earn: ["Obtain (money) in return for labour or services."],
+        end: [
+          "A final part of something, especially a period of time, an activity, or a story.",
+        ],
+        pad: [
+          "A thick piece of soft material, typically used to protect or shape something, or to absorb liquid.",
+        ],
+        pan: ["A metal container used for cooking food in."],
+        pane: ["A single sheet of glass in a window or door."],
+        pair: ["A set of two things used together or regarded as a unit"],
+        pain: [
+          " Highly unpleasant physical sensation caused by illness or injury.",
+        ],
+        pear: [
+          "A yellowish- or brownish-green edible fruit that is typically narrow at the stalk and wider towards the base, with sweet, slightly gritty flesh.",
+        ],
+        pine: [
+          "An evergreen coniferous tree which has clusters of long needle-shaped leaves.",
+        ],
+        pride: [
+          "A feeling of deep pleasure or satisfaction derived from ones own achievements, the achievements of those with whom one is closely associated, or from qualities or possessions that are widely admired.",
+        ],
+        rain: [
+          "The condensed moisture of the atmosphere falling visibly in separate drops.",
+        ],
+        raise: ["Lift or move to a higher position or level."],
+        ride: [
+          "A journey made on a horse, bicycle, or motorcycle, or in a vehicle.",
+        ],
+        rib: [
+          "Each of a series of slender curved bones articulated in pairs to the spine (twelve pairs in humans), protecting the thoracic cavity and its organs.",
+        ],
+        rise: ["Move from a lower position to a higher one; come or go up."],
+        side: [
+          "A position to the left or right of an object, place, or central point.",
+        ],
+        snare: [
+          "A trap for catching birds or mammals, typically one having a noose of wire or cord.",
+        ],
+        spread: [
+          "Open out (something) so as to extend its surface area, width, or length.",
+        ],
+        saber: [
+          "A heavy cavalry sword with a curved blade and a single cutting edge.",
+        ],
+        sane: ["(Of a person) of sound mind, not mad or mentally ill."],
+        sand: [
+          "A loose granular substance, typically pale yellowish brown, resulting from the erosion of siliceous and other rocks and forming a major constituent of beaches, river beds, the seabed, and deserts.",
+        ],
+        send: [
+          "Cause to go or be taken to a particular destination; arrange for the delivery of, especially by post.",
+        ],
+        seer: [
+          "A person of supposed supernatural insight who sees visions of the future.",
+        ],
+        sine: [
+          "The trigonometric function that is equal to the ratio of the side opposite a given angle (in a right-angled triangle) to the hypotenuse.",
+        ],
+        span: [
+          "The full extent of something from end to end; the amount of space that something covers.",
+        ],
+        spin: ["Turn or cause to turn or whirl round quickly."],
+        spine: [
+          "A series of vertebrae extending from the skull to the small of the back, enclosing the spinal cord and providing support for the thorax and abdomen; the backbone.",
+        ],
+        bane: ["A cause of great distress or annoyance."],
+        bean: [
+          "An edible seed, typically kidney-shaped, growing in long pods on certain leguminous plants.",
+        ],
+        bare: ["(Of a person or part of the body) not clothed or covered."],
+        brand: [
+          "A type of product manufactured by a particular company under a particular name.",
+        ],
+        scribe: [
+          "A person who copies out documents, especially one employed to do this before printing was invented.",
+        ],
+        arise: ["To get up or come into existence."],
+        bends: ["Curves or turns in a different direction."],
+        band: ["A group of people joined together for a common purpose."],
+        pander: ["To gratify or indulge someones weaknesses or vices."],
+        pared: ["Reduced or trimmed down."],
+        resin: ["A sticky substance obtained from plants or trees."],
+        rides: ["Moves or travels by sitting in or on a vehicle."],
+        nerd: [
+          "Informal term for intellectually inclined or socially awkward individual.",
+        ],
+        snipe: ["To make a sly or petty verbal attack."],
+        snider: [
+          'Comparative form of "snide," displaying a mocking or derogatory attitude.',
+        ],
+        sabre: ["An edged weapon with a curved blade."],
+        serin: ["A small finch-like bird found in Europe and Asia."],
+        spared: ["Saved from harm or damage."],
+        panier: [
+          "A basket or container, especially one carried on the back of an animal.",
+        ],
+        nadir: ["The lowest point or moment of something."],
+        braised: [
+          "Cooked slowly in a closed container with a small amount of liquid.",
+        ],
+        snare: [
+          "A trap for catching animals or something that entangles or catches.",
+        ],
+        debris: ["Scattered pieces of waste or remains."],
+        braid: ["To weave together strands of hair or other materials."],
+        napes: ["The back of the neck or a similar area in animals."],
+        bedpan: [
+          "A shallow container used by bedridden patients for urination or defecation.",
+        ],
+        rapine: ["The violent seizure of someones property."],
+        insider: [
+          "Someone with privileged or confidential information about a situation or organization.",
+        ],
+        bud: [
+          "A small swelling on a branch that grows into a leaf, flower, or shoot.",
+        ],
+        bug: ["An insect, often referring to small creatures with six legs."],
+        burp: [
+          "The release of gas from the stomach through the mouth, accompanied by a sound.",
+        ],
+        burden: [
+          "A heavy load or something that is emotionally difficult to bear.",
+        ],
+        budge: [
+          "To move slightly or change position after being stuck or immovable.",
+        ],
+        brine: ["Water saturated or strongly impregnated with salt."],
+        burn: ["To undergo combustion or be consumed by fire."],
+        ding: ["To dent or make a small indentation on a surface."],
+        dire: ["Extremely serious or urgent."],
+        dune: ["A hill or ridge of sand formed by the wind."],
+        drug: [
+          "A substance that affects the functioning of the body, often used as medicine.",
+        ],
+        grin: ["A wide smile expressing happiness or amusement."],
+        grind: ["To crush or pulverize something into small particles."],
+        grid: ["A framework of parallel or intersecting lines."],
+        grip: ["To hold tightly or firmly."],
+        guide: ["A person who leads or directs others on a journey."],
+        grub: ["Larvae of certain insects, or slang for food."],
+        nudge: ["To push gently or persistently."],
+        nude: ["Not clothed or without clothing."],
+        rein: ["A strap or rope attached to a horses bridle for control."],
+        rend: ["To tear or rip something into pieces."],
+        rude: ["Lacking manners or being impolite."],
+        ruin: ["Destruction or downfall, often resulting in dilapidation."],
+        run: ["To move swiftly on foot."],
+        unbind: ["To release from bonds or constraints."],
+        under: ["Beneath or below something else."],
+        bruin: ["A bear, especially in literature or folklore."],
+        rebind: ["To bind again or secure with a fastening."],
+        buried: ["Covered or hidden beneath the surface."],
+        burin: ["A steel tool with a sharp point, used for engraving."],
+        unbred: ["Not bred or having no offspring."],
+        reding: ["An obsolete term for counseling or advising."],
+        inured: ["Accustomed or hardened to something difficult or painful."],
+        bruined: ["Made brown or discolored, often by exposure to the sun."],
+        nudger: ["Someone or something that nudges or prompts."],
+        bunged: ["Blocked or closed with a stopper."],
+        dubbing: ["The process of adding a soundtrack to a film or video."],
+        dinger: ["A solid hit or strong impact, especially in baseball."],
+        ring: [
+          "A circular band often worn as jewelry or for various purposes.",
+        ],
+        urn: ["A decorative vase often used to hold ashes or as an ornament."],
+        draw: [
+          "Produce (a picture or diagram) by making lines and marks on paper with a pencil, pen, etc.",
+        ],
+        armed: ["Equipped with or carrying weapons, typically guns or knives."],
+        meant: [
+          'Past tense and past participle of the verb "mean," which can mean to intend or to signify.',
+        ],
+        trade: [
+          "The act or process of buying, selling, or exchanging goods or services.",
+        ],
+        tread: [
+          "The pattern of raised horizontal ridges on the surface of a tire or shoe, providing traction.",
+        ],
+        dewar: [
+          "A double-walled vessel used to store and transport liquefied gases, keeping them at a low temperature.",
+        ],
+        under: ["In or into a position below or beneath something."],
+        derma: ["The skin, especially as a distinct layer."],
+        named: [
+          'Past tense and past participle of the verb "name," which means to give a name to someone or something.',
+        ],
+        amend: [
+          "To make minor changes in order to improve or clarify something, especially a legal document.",
+        ],
+        wane: ["To decrease gradually in size, intensity, or degree."],
+        ante: ["To place a bet before seeing ones own cards."],
+        taw: [
+          "To convert (skins) into leather by soaking in a liquid containing tannic acid.",
+        ],
+        award: [
+          "A prize or other mark of recognition given in honor of an achievement.",
+        ],
+        wader: [
+          "A waterproof boot extending from the foot to the chest, typically made of rubber or plastic, worn for walking in water.",
+        ],
+        trawl: ["To fish with a trawl net or seine."],
+        tan: [
+          "To convert (animal hide) into leather by soaking in a liquid containing tannic acid; also, the brown color acquired by the skin after exposure to the sun.",
+        ],
+        mat: [
+          "A flat piece of material used as a surface to wipe the feet on, or a piece of coarse fabric for wiping ones shoes.",
+        ],
+        dew: [
+          "Tiny drops of water that form on cool surfaces at night when atmospheric vapor condenses.",
+        ],
+        date: ["The day of the month or year as specified by a number."],
+        wand: [
+          "A thin, slender stick or rod, often magical in nature, used by wizards or magicians.",
+        ],
+        dawn: [
+          "The first appearance of light in the sky before sunrise; the beginning or rise of something.",
+        ],
+        rend: ["To tear or split apart violently."],
+        dart: ["A small, pointed missile that can be thrown or fired."],
+        ward: [
+          "A person, especially a child, who is under the protection or care of someone.",
+        ],
+        tear: ["To damage or rip apart by pulling forcefully."],
+        dear: ["Loved or cherished; highly valued."],
+        want: [
+          "To have a desire for something; a lack or deficiency of something.",
+        ],
+        read: [
+          "To look at and comprehend the meaning of written or printed matter by interpreting the characters or symbols.",
+        ],
+        mate: ["A partner or companion; to bring together for breeding."],
+        tame: ["Domesticated or brought under human control; not wild."],
+        rate: [
+          "A measure, quantity, or frequency, usually in relation to another measure.",
+        ],
+        near: ["In close proximity; almost or nearly."],
+        eare: ["Not occurring often; uncommon."],
+        dare: [
+          "To have the courage to do something; to challenge someone to do something difficult.",
+        ],
+        darted: ["Moved suddenly and quickly in a particular direction."],
+        wanted: ["Desiring or wishing for something; desired by someone."],
+        warmed: ["Made or become warm."],
+        disc: [
+          "A flat, thin, and typically round object with symmetrical sides, often used for playing games such as frisbee or as a storage medium for digital data.",
+        ],
+        sun: [
+          "The star around which the Earth orbits, providing light and heat to the Earth; the source of daylight.",
+        ],
+        scum: [
+          "A layer of impurities or undesirable material that forms on the surface of a liquid, often used colloquially to describe unpleasant or contemptible people.",
+        ],
+        sin: [
+          "An immoral act considered to be a transgression against divine law; a wrongful or regrettable action.",
+        ],
+        bat: [
+          "A mammal capable of sustained flight, typically with membranous wings. It can also refer to a piece of equipment used in sports such as baseball or cricket.",
+        ],
+        rat: [
+          "A rodent known for its long tail and sharp teeth. It can also be used informally to describe a person who betrays or informs on others.",
+        ],
+        tar: [
+          "A dark, thick, flammable liquid obtained from wood or coal, used as a road surfacing material or for waterproofing.",
+        ],
+        bar: [
+          "A place where alcoholic beverages are served; a counter or area where drinks are prepared and served.",
+        ],
+        sea: [
+          "The expanse of saltwater covering the Earths surface, often divided into several recognized oceans.",
+        ],
+        tea: [
+          "A hot or cold beverage made by infusing dried, crushed, or fermented leaves of the tea plant in hot water.",
+        ],
+        eat: ["To consume food by putting it in the mouth and swallowing."],
+        set: [
+          "To put something in a particular position or state; a collection of objects or scenery used for a particular scene in a play, movie, or television program.",
+        ],
+        bet: [
+          "To risk money or valuables on the outcome of an event or a contest, typically with the expectation of winning additional money.",
+        ],
+        hot: ["Having a high temperature; spicy or pungent in flavor."],
+        hoe: [
+          "A gardening tool with a thin, flat blade used for loosening soil and removing weeds.",
+        ],
+        toe: ["One of the digits of the foot; the front part of the foot."],
+        sob: ["To cry noisily while taking in short, sudden breaths."],
+        rob: ["To take property unlawfully from a person or place."],
+        orb: [
+          "A spherical object; a celestial body such as the moon or a planet.",
+        ],
+        era: [
+          "A period of time marked by distinctive events, developments, or figures.",
+        ],
+        ear: ["The organ of hearing; the external part of this organ."],
+        taro: ["A tropical plant with a starchy root used as a vegetable."],
+        sort: [
+          "To arrange or classify in a particular way; a category or type.",
+        ],
+        zest: [
+          "The outer colored peel of a citrus fruit used for flavoring; great enthusiasm or energy.",
+        ],
+        zero: ["The numerical value 0; nothing or no quantity."],
+        rote: ["Mechanical or habitual repetition of something to be learned."],
+        roes: [
+          "The eggs of a female fish, especially when prepared as a delicacy.",
+        ],
+        rose: [
+          "A type of flowering shrub or vine with thorns and fragrant flowers.",
+        ],
+        hose: [
+          "A flexible tube conveying water or other fluid; a garment worn on the legs and feet.",
+        ],
+        host: [
+          "A person who receives or entertains guests; a large number of people or things.",
+        ],
+        shot: [
+          "The firing or discharge of a gun or other projectile; an attempt to score in a game.",
+        ],
+        star: [
+          "A celestial body that emits light and heat due to nuclear reactions; a famous person.",
+        ],
+        tsar: ["An emperor or ruler in certain European countries."],
+        boat: ["A small vessel for traveling on water."],
+        bota: ["A leather wine bag typically used by Spanish shepherds."],
+        base: [
+          "The lowest part or foundation of something; morally low or without principles.",
+        ],
+        bate: [
+          "To moderate or restrain; to reduce the force or intensity of something.",
+        ],
+        beat: ["To strike or hit repeatedly; a rhythmic unit in music."],
+        best: ["Of the highest quality or excellence; surpassing all others."],
+        arts: [
+          "Creative endeavors such as painting, music, literature, or performing arts.",
+        ],
+        hest: ["An archaic or poetic term meaning a command or request."],
+        rest: [
+          "To cease work or movement in order to relax or recover strength; the state of being at peace or in tranquility.",
+        ],
+        shoe: [
+          "A covering for the foot, typically made of leather, with a sturdy sole and not reaching above the ankle.",
+        ],
+        hold: [
+          "To grasp or carry something with your hands, to keep something in place, or to possess or own something.",
+        ],
+        echo: [
+          "A repetition or imitation of sound caused by the reflection of sound waves.",
+        ],
+        field: [
+          "An area of land used for agricultural purposes or a specific area of study, expertise, or activity.",
+        ],
+        file: "A folder or collection of information stored together, or to arrange documents or data in a particular order.",
+        fold: "To bend or bring together parts, as in cloth or paper.",
+        lode: "A deposit of valuable ore within definite boundaries separating it from surrounding rocks.",
+        old: "Having lived for a long time; no longer young.",
+        doe: "A female deer.",
+        dice: "A small, cube-shaped object marked with one to six spots on each face, used in games of chance.",
+        die: "To cease living; undergo a sudden, violent death.",
+        fiddle: "To play the violin, especially in a nonclassical style.",
+        hole: "A hollow place in a solid body or surface.",
+        bore: "To drill a hole or tunnel into something; to make weary through dullness or repetition.",
+        road: "A wide path for vehicles or pedestrians; a route or way to get from one place to another.",
+        dome: "A rounded or hemispherical roof or ceiling; a building or structure with a dome.",
+        brag: "To boast or talk with excessive pride about one's achievements or possessions.",
+        mode: "A particular way or manner of doing something; a fashion or style.",
+        gear: "Equipment or machinery for a particular purpose; a mechanism that transmits motion in a machine.",
+        bead: "A small, usually round object with a hole for threading on a string; a droplet of liquid.",
+        made: "Past tense and past participle of the verb 'make,' meaning to create or construct.",
+        dear: "Regarded with deep affection; highly valued or precious.",
+        dare: "To have the courage to do something; to challenge someone to perform a task.",
+        drab: "Lacking brightness or interest; dull or monotonous in appearance.",
+        game: "An activity engaged in for entertainment or fun; a form of play with rules.",
+        demo: "A demonstration or public display of a product, process, or skill.",
+        bode: "To be an omen or indicator of a future event; to foreshadow.",
+        roam: "To move about or travel aimlessly; to wander or explore without a definite destination.",
+        ogre: "A cruel and terrifying giant or monster, typically depicted in folklore.",
+        grad: "Short for 'graduate,' a person who has successfully completed a course of study.",
+        mega: "Denoting a factor of one million; extremely large or powerful.",
+        gore: "Blood that has been shed, especially as a result of violence or injury.",
+        mare: "A female horse; a fully mature female of various other mammals, such as elephants or whales.",
+        goer: "A person who attends or regularly goes to a particular place or event.",
+        barm: "Yeast foam that forms on the top of fermenting beer; froth or foam.",
+        beam: "A long, sturdy piece of timber or metal used as a horizontal support in construction.",
+        bear: "A large, heavy mammal with shaggy fur and a robust build; to endure or carry a burden.",
+        brad: "A thin wire nail with a small, rounded head.",
+        doer: "A person who acts or performs a task; one who accomplishes something.",
+        dore: "A term used in metallurgy to describe a process of gilding or plating with gold.",
+        grade:
+          "A level or stage in a process, a rank or class in a grading system.",
+        adobe:
+          "A type of building material made from earth, typically used to make bricks.",
+        amber:
+          "A hard, yellowish-brown substance often used in jewelry; a fossilized resin.",
+        bread:
+          "A staple food made from flour, water, and yeast, typically baked or leavened.",
+        omega:
+          "The last letter of the Greek alphabet; used to denote the last or final part of something.",
+        robe: "A long, loose outer garment, often worn as a symbol of office or authority.",
+        roam: "To move about or travel aimlessly; to wander or explore without a definite destination.",
+        alone: "Being by oneself; separate from others.",
+        move: "Changing position or place; to go from one place to another.",
+        love: "Deep affection, fondness, or an intense feeling of connection towards someone or something.",
+        came: "The past tense of the verb 'come,' indicating movement toward a particular location.",
+        oven: "A kitchen appliance or enclosed compartment used for cooking or baking food.",
+        name: "A word or term used for identification; also, to give a specific title or identity to someone or something.",
+        vale: "A valley, usually smaller and more enclosed than a valley.",
+        acme: "The point of highest achievement or excellence; the peak or highest point.",
+        loan: "An amount of money borrowed with an agreement to return it, usually with added interest.",
+        coal: "A black or dark brown combustible rock often used as fuel.",
+        calm: "A state of tranquility, absence of disturbance, or a peaceful condition.",
+        clan: "A group of people with a common ancestor or shared interests.",
+        nova: "A star that suddenly becomes much brighter and then gradually returns to its original brightness over a few months.",
+        lean: "To incline or bend in a particular direction; lacking excess or fat, thin.",
+        mole: "A small mammal with velvety fur and very small eyes; also, a small, often dark-colored spot on the skin.",
+        mane: "The long hair growing from the neck or upper part of the neck of certain animals, such as horses or lions.",
+        mace: "A spice made from the dried outer covering of the nutmeg seed; also, a ceremonial staff carried as a symbol of authority.",
+        acne: "A skin condition characterized by red pimples, especially on the face, due to inflamed or infected sebaceous glands.",
+        acorn:
+          "The nut of an oak tree, typically oval and covered with a cupule.",
+        lemon:
+          "A yellow, citrus fruit with sour taste; also, something that is disappointing or unsatisfactory.",
+        melon:
+          "A juicy, typically round fruit with a smooth exterior, such as a watermelon or cantaloupe.",
+        lame: "Unable to walk properly due to injury or weakness; also used informally to describe something that is unconvincing or inadequate.",
+        lace: "A delicate fabric made of yarn or thread in an open web-like pattern; also, to fasten or tie with laces.",
+        cane: "A slender, flexible stem, often from bamboo, used as support or walking stick; also, the stems of certain plants.",
+        clove:
+          "A dried flower bud from the clove tree, used as a spice; also, a segment or division of a bulb.",
+        clam: "A type of shellfish with two hinged shells; also, used informally to refer to being tight-lipped or silent.",
+        enclave:
+          "A distinct territorial or cultural area enclosed within a larger territory.",
+        venom:
+          "Poisonous secretion injected into prey by snakes, spiders, or certain other animals; also, used metaphorically to describe intense malice or spite.",
       };
 
       function searchDictionary() {
@@ -452,11 +956,6 @@
           resultDiv.innerHTML = "Word not found in the dictionary.";
         }
       }
-      <div class="button-container">
-        <button class="clear">Clear</button>
-
-        <button class="next">Next</button>
-      </div>;
     </script>
   </body>
 </html>
