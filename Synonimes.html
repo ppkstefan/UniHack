@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Synonyms Web App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .title {
+        background-color: rgb(209, 42, 0);
+        display: inline-block;
+        padding: 10px;
+        border-radius: 8px;
+        color: #fff;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: rgb(209, 42, 0);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+      }
+
+      button:hover {
+        background-color: #da8d00;
+      }
+
+      button:active {
+        opacity: 0.7;
+      }
+
+      #result {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+
+      .butonn {
+        background-color: #45a049;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+      }
+
+      .butonn:hover {
+        background-color: #5c0b0a;
+      }
+
+      .butonn:active {
+        opacity: 0.7;
+      }
+    </style>
+    <link rel="stylesheet" href="flexbox.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="imageDiv">
+        <a href="wordle.html"
+          ><img
+            class="image"
+            src="/images/WhatsApp_Image_2023-11-18_at_14.51.51_e547de02-removebg-preview.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="logo">
+        <a href="wordle.html" class="logoText">HustleWords</a>
+      </div>
+
+      <div class="search"></div>
+
+      <div class="dictionary">
+        <a href="proiect Timisoara.html" class="left"
+          ><strong>Dictionary</strong></a
+        >
+      </div>
+
+      <div class="synonyms">
+        <a href="Synonimes.html" class="left"><strong>Synonyms</strong></a>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="title">Synonyms Web App</h1>
+      <label for="search-box">Enter a word:</label>
+      <input type="text" id="search-box" placeholder="Type a word..." />
+      <button onclick="searchDictionary()" class="button">
+        <strong>Search</strong>
+      </button>
+      <div id="result"></div>
+    </div>
+
+    <script>
+      const dictionary = {
+        good: ["excellent", "fine", "superb", "outstanding"],
+        new: ["fresh", "recent", "modern", "novel"],
+        first: ["initial", "primary", "inaugural", "premier"],
+        last: ["final", "ultimate", "concluding", "terminal"],
+        long: ["lengthy", "extended", "prolonged", "enduring"],
+        great: ["fantastic", "wonderful", "terrific", "impressive"],
+        little: ["small", "tiny", "petite", "minuscule"],
+        own: ["personal", "individual", "private", "exclusive"],
+        other: ["different", "alternate", "additional", "supplementary"],
+        old: ["ancient", "vintage", "elderly", "aged"],
+        right: ["correct", "accurate", "proper", "just"],
+        big: ["large", "huge", "massive", "enormous"],
+        high: ["tall", "elevated", "lofty", "elevated"],
+        different: ["diverse", "distinct", "varied", "unalike"],
+        small: ["little", "minor", "miniature", "compact"],
+        large: ["big", "huge", "massive", "spacious"],
+        next: ["subsequent", "following", "coming", "future"],
+        early: ["premature", "in advance", "ahead of time", "prompt"],
+        young: ["youthful", "juvenile", "adolescent", "teenage"],
+        important: ["significant", "crucial", "vital", "essential"],
+        few: ["limited", "scarce", "sparse", "handful"],
+        public: ["common", "social", "collective", "shared"],
+        bad: ["poor", "negative", "inferior", "unpleasant"],
+        same: ["identical", "equal", "similar", "matching"],
+        able: ["capable", "competent", "skilled", "proficient"],
+        // Add more words and their synonyms as needed
+      };
+
+      function searchDictionary() {
+        const searchTerm = document
+          .getElementById("search-box")
+          .value.toLowerCase();
+        const resultDiv = document.getElementById("result");
+
+        if (searchTerm in dictionary) {
+          resultDiv.innerHTML = `<strong>${searchTerm}:</strong> ${dictionary[
+            searchTerm
+          ].join(", ")}`;
+        } else {
+          resultDiv.innerHTML = "Word not found in the dictionary.";
+        }
+      }
+    </script>
+  </body>
+</html>

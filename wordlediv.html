@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Guessing Game</title>
+
+    <link rel="stylesheet" href="wordleStyle.css" />
+    <link rel="stylesheet" href="flexbox.css" />
+  </head>
+  <body style="padding-bottom: 150px">
+    <div class="header">
+      <div class="imagePointer">
+        <a href=""
+          ><img class="image" src="/images/image-removebg-preview.png" alt=""
+        /></a>
+      </div>
+      <div class="imageDiv">
+        <a href="wordle.html"
+          ><img
+            class="image"
+            src="/images/WhatsApp_Image_2023-11-18_at_14.51.51_e547de02-removebg-preview.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="logo">
+        <a href="wordle.html" class="logoText">HustleWords</a>
+      </div>
+
+      <div class="search"></div>
+
+      <div class="dictionary">
+        <a href="proiect Timisoara.html" class="left"
+          ><strong>Dictionary</strong></a
+        >
+      </div>
+
+      <div class="synonyms">
+        <a href="Synonimes.html" class="left"><strong>Synonyms</strong></a>
+      </div>
+    </div>
+    <div class="header">
+      <div class="imagePointer">
+        <a href=""
+          ><img class="image" src="/images/image-removebg-preview.png" alt=""
+        /></a>
+      </div>
+      <div class="imageDiv">
+        <a href="wordle.html"
+          ><img
+            class="image"
+            src="/images/WhatsApp_Image_2023-11-18_at_14.51.51_e547de02-removebg-preview.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="logo">
+        <a href="wordle.html" class="logoText">HustleWords</a>
+      </div>
+
+      <div class="search"></div>
+
+      <div class="dictionary">
+        <a href="proiect Timisoara.html" class="left"
+          ><strong>Dictionary</strong></a
+        >
+      </div>
+
+      <div class="synonyms">
+        <a href="Synonimes.html" class="left"><strong>Synonyms</strong></a>
+      </div>
+    </div>
+    <h1><strong>Word Guessing Game</strong></h1>
+
+    <div id="result-message"></div>
+    <input type="text" id="search-box" placeholder="Type a word..." />
+    <button class="check" style="display: inline-block" onclick="checkWord()">
+      Check
+    </button>
+    <div id="letter-buttons-container"></div>
+    <div id="definition"></div>
+
+    <div class="button-container">
+      <button class="clear" onclick="clearSearchBox()">Clear</button>
+
+      <button class="next" onclick="nextSet()">Next</button>
+    </div>
+    <script src="wordleCode.js"></script>
+  </body>
+</html>
